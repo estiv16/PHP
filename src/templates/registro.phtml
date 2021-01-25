@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>registro</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <div class="general">
+    <h1 class="nombreFormulario">Registro</h1>
+
+    <div class="formulario">
+      <form action="/registro" method="post" >
+        
+        <div class="element-container container-name">
+          <label for="name" class="label label-name" >nombre:</label>
+          <input type="text" id="name" name="name">
+        </div>
+
+        <div class="element-container container-usuario">
+          <label for="usuario" class="label label-usuario">usuario:</label>
+          <input type="text" id="usuario" name="usuario">
+        </div>
+
+        <div class="element-container container-phone">
+          <label for="phone" class="label label-phone">telefono:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+        </div>
+         
+
+
+        <label for="nacionalidad" class="label label-nacionalidad">nacionalidad:</label>
+        <div class="element-container container-nacionalidad">
+          <select name="nacionalidad" id="nacionalidad" class="center select-nacionalidad">
+            <option value="colombia">colombia</option>
+            <option value="venezuela">venezuela</option>
+            <option value="argentina">argentina</option>
+          </select>
+        </div>
+
+        <div class="element-container container-correo">
+          <label for="correo" class="label label-correo">correo:</label>
+          <input type="email" id="correo" name="correo">
+        </div>
+
+        <label for="edad" class="label label-edad">edad:</label>
+        <div class="element-container container-edad">
+          <input type="number" id="edad" name="edad" min="1" max="150">
+        </div>
+
+        <label for="foto" class="label label-foto">foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+        <br><br>
+
+        <label for="contraseña">contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña">
+        <br><br>
+        
+        <input type="submit" value="Submit" class="submit" id="submit">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
+</Html>
+

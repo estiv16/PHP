@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mensaje</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <div class="general">
+    <h1 class="nombreFormulario">Mensaje</h1>
+
+    <div class="formulario">
+
+      <form action="/mensaje" method="post" >
+        
+        <div class="element-container container-teto">
+          <label for="teto" class="label label-teto" >mensaje:</label>
+          <textarea name="teto" rows="10" cols="40">Escribe aquí tu mensaje</textarea>
+        </div>   
+
+
+        <div class="element-container container-hora">
+          <label for="hora" class="label label-hora" >hora:</label>
+          <input type="time" id="hora" name="hora">
+        </div> 
+
+
+        <div class="element-container container-fecha">
+          <label for="fecha" class="label label-fecha" >fecha:</label>
+          <input type="number" id="fecha" name="fecha">
+        </div>  
+
+         
+
+        <div class="element-container container-chat">
+          <label for="chat" class="label label-chat" >idChat:</label>
+          <input type="number" id="idchat" name="idchat">
+        </div>           
+        
+        <input type="submit" value="Submit" class="submit" id="submit">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
+</Html>
